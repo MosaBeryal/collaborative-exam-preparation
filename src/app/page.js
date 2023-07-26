@@ -15,7 +15,7 @@ export default function Home() {
     <main className="flex p-8 min-h-screen flex-col items-center justify-center pt-20 gap-3 w-full bg-base-300">
       {/* <SearchCategory /> */}
       <div
-        className="bg-white rounded-lg flex flex-col  shadow-lg p-4  hover:scale-100 gap-4 w-full md:w-3/6 lg:w-3/6"
+        className="bg-white rounded-lg flex flex-col  shadow-lg p-4  hover:scale-100 gap-4 w-full md:w-[53%] lg:w-[53%]"
         onClick={() => window.my_modal_3.showModal()}
       >
         <div className="flex items-center">
@@ -29,10 +29,11 @@ export default function Home() {
             Loyce Kuvalis
           </span>
         </div>
+        <hr/>
         {/* <div className=" text-3xl lg:text-4xl md:text-4xl  text-[#399bf7]">
             <MdPostAdd />
           </div> */}
-        <div className="text-[1rem] md:text-lg font-semibold text-gray-500 flex justify-center">
+        <div className="text-[1rem] md:text-lg font-semibold text-gray-500 flex justify-center bg-gray-100 rounded-full h-12 items-center">
           <h3>What's on your mind , Loyce Kuvalis?</h3>
         </div>
       </div>
