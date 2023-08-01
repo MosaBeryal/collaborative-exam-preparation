@@ -77,7 +77,7 @@ const CreatePost = ({ showModal, setShowModal }) => {
             <h3 className="font-bold text-lg">Create post</h3>
             <button
               className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
-              onClick={() => setShowModal(false)}
+              onClick={()=>window.my_modal_3.showModal()}
             >
               ✕
             </button>

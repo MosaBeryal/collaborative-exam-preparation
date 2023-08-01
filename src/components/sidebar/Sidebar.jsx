@@ -2,11 +2,12 @@ import Link from "next/link";
 import React from "react";
 import { FaHome, FaUsers, FaCog, FaSignOutAlt } from "react-icons/fa";
 import { IoIosPerson } from "react-icons/io";
+import {HiSaveAs} from 'react-icons/hi'
 
 const Sidebar = ({ isOpen }) => {
   const sidebarItems = [
     { icon: <FaHome />, label: "Home", url: "/" },
-    { icon: <FaUsers />, label: "Users", url: "/" },
+    { icon: <HiSaveAs />, label: "Saved Posts", url: "/" },
     { icon: <IoIosPerson />, label: "Profile", url: "/" },
     { icon: <FaCog />, label: "Settings", url: "/posts" },
     { icon: <FaSignOutAlt />, label: "Logout", url: "/" },
