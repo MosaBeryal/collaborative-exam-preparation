@@ -6,24 +6,26 @@ import CreatePost from "../components/CreatePost/CreatePost";
 import Posts from "@/components/posts/Posts";
 import SearchCategory from "@/components/searchCategory/searchCategory";
 
+
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
-  const handleModal = () => {
+const handleModal = () => {
     setShowModal(true);
   };
   return (
-    <main className="flex p-8 min-h-screen flex-col items-center justify-center pt-20 gap-3 w-full bg-base-300">
+    <main className="flex p-8 min-h-screen flex-col items-center justify-center pt-20 gap-3 bg-base-300 w-full">
       {/* <SearchCategory /> */}
       <div
-        className="bg-white rounded-lg flex flex-col  shadow-lg p-4  hover:scale-100 gap-4 w-full md:w-[53%] lg:w-[53%]"
+        className="bg-white rounded-lg flex flex-col  shadow-lg p-4  hover:scale-100 gap-4 w-full md:w-[32rem] lg:w-[32rem]"
         onClick={() => window.my_modal_3.showModal()}
       >
-        <div className="flex items-center">
+        <div className="flex items-center ">
           <Image
             src="/profile.jpg"
             width={50}
             height={50}
             className="rounded-full w-12 h-12"
+            alt="profilePicture"
           />
           <span className="ml-2 block font-medium text-base leading-snug text-black dark:text-gray-100">
             Loyce Kuvalis
@@ -39,9 +41,9 @@ export default function Home() {
       </div>
       <div className="flex gap-3 justify-between">
         <div>
-          <select className="select select-xs max-w-sm w-[150px]">
+          <select className="select select-xs max-w-sm ">
             <option disabled selected>
-              filter subject
+            Subjects
             </option>
             <option>Genral</option>
             <option>Political science</option>
@@ -53,7 +55,6 @@ export default function Home() {
         </div>
       </div>
       <CreatePost />
-
       <Posts />
       <Posts />
       <Posts />

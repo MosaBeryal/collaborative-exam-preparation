@@ -21,10 +21,12 @@ const Post = () => {
     <div className="px-5 py-4 bg-white dark:bg-gray-800 shadow rounded-lg max-w-lg">
       <div className="flex justify-between">
         <div className="flex mb-4">
-          <img
+          <Image
             className="w-12 h-12 rounded-full"
             src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
             alt="Profile"
+            width={50}
+            height={50}
           />
           <div className="ml-2 mt-0.5">
             <span className="block font-medium text-base leading-snug text-black dark:text-gray-100">
@@ -37,7 +39,7 @@ const Post = () => {
         </div>
         <div>
           <button className="btn btn-sm">
-            <Image src={saveIcon} width={20} height={20} />
+            <Image src={saveIcon} width={20} height={20} alt="saveIcon"/>
           </button>
         </div>
       </div>
